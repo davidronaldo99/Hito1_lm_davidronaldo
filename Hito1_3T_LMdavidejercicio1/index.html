@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de David</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de David</h1>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <input type="text" id="screen" class="form-control mb-2" readonly>
+            <div class="row">
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="clearScreen()">C</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="squareRoot()">√</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="square()">x^2</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="percentage()">%</button></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(7)">7</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(8)">8</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(9)">9</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="operation('/')">/</button></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(4)">4</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(5)">5</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(6)">6</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="operation('*')">x</button></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(1)">1</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(2)">2</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(3)">3</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="operation('-')">-</button></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen(0)">0</button></div>
+              <div class="col-3"><button class="btn btn-light btn-block" onclick="addToScreen('.')">.</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="operation('+')">+</button></div>
+              <div class="col-3"><button class="btn btn-primary btn-block" onclick="calculate()">=</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

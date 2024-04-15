@@ -1,0 +1,76 @@
+/* Estilos para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200530/pngtree-cute-hand-drawn-style-math-education-plaid-background-image_337365.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Color de texto blanco */
+  }
+  
+  /* Estilos para el título */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    color: #ff4500;
+  }
+  
+  /* Estilos para la calculadora */
+  .container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo semitransparente */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  #screen {
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 24px;
+  }
+  
+  .btn {
+    font-size: 20px;
+  }
+  
+  /* Estilos para los botones de operación */
+  .btn-primary,
+  .btn-light {
+    font-size: 24px;
+    height: 60px;
+  }
+  
+  .btn-primary {
+    background-color: #ff6347; /* Color coral */
+    border-color: #ff6347;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff4500; /* Color naranja oscuro */
+    border-color: #ff4500;
+  }
+  
+  .btn-light {
+    background-color: #ffdab9; /* Color melocotón */
+    border-color: #ffdab9;
+  }
+  
+  .btn-light:hover {
+    background-color: #ffb6c1; /* Color rosa claro */
+    border-color: #ffb6c1;
+  }
+  
+  /* Estilos adicionales para el contenedor de botones */
+  .row {
+    margin-bottom: 10px;
+  }
+  
