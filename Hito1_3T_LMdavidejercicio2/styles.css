@@ -1,4 +1,4 @@
-body, html {
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,7 +8,7 @@ body, html {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
@@ -24,7 +24,7 @@ body, html {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo translúcido para que el texto sea legible */
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +55,7 @@ body, html {
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f7fafc; /* Cambiado a un tono más claro */
+    background-color: #f7fafc;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -63,7 +63,7 @@ body, html {
 
 .province:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumentado el desenfoque de la sombra en el hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .province-name {
@@ -74,7 +74,7 @@ body, html {
 }
 
 .weather-info {
-    color: #000000; /* Ajustado el color del texto para que contraste mejor */
+    color: #000000;
 }
 
 hr {
@@ -82,9 +82,17 @@ hr {
     border: none;
     border-top: 1px solid #ddd;
 }
-h1{
-color: #000000;
 
+h1 {
+    color: #000000;
+}
 
+.title-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.title-image img {
+    max-width: 100%;
+    height: auto;
 }
