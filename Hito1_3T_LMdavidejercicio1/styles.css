@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200530/pngtree-cute-hand-drawn-style-math-education-plaid-background-image_337365.jpg'); /* URL de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
+    background-color: rgb(31, 48, 48);
+    background-size: 100% 100%; /* Ajusta la imagen de fondo para que ocupe toda la página */
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff; /* Color de texto blanco */
@@ -15,14 +15,26 @@ body {
     text-align: center;
     margin-top: 50px;
     font-size: 36px;
-    color: #ff4500;
+    color: #030303;
   }
   
   /* Estilos para la calculadora */
-  .container {
-    margin-top: 20px;
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el video detrás de todo el contenido */
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir toda la pantalla */
   }
   
+  /* Estilos para el título y la calculadora */
+  .container {
+    position: relative; /* Establece un contexto de apilamiento para que el contenido esté encima del video */
+    z-index: 1; /* Coloca el contenido encima del video */
+    margin-top: 20px;
+  }
   .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.8); /* Color de fondo semitransparente */
@@ -50,7 +62,7 @@ body {
   }
   
   .btn-primary {
-    background-color: #ff6347; /* Color coral */
+    background-color: #000000; /* Color coral */
     border-color: #ff6347;
   }
   
@@ -60,12 +72,13 @@ body {
   }
   
   .btn-light {
-    background-color: #ffdab9; /* Color melocotón */
-    border-color: #ffdab9;
+    background-color: #000000; /* Color melocotón */
+    border-color: #ff7700;
+    color: #ffffff;
   }
   
   .btn-light:hover {
-    background-color: #ffb6c1; /* Color rosa claro */
+    background-color: #2acfd4; /* Color rosa claro */
     border-color: #ffb6c1;
   }
   
