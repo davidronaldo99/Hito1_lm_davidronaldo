@@ -1,7 +1,8 @@
+body,
 html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 #video-bg {
@@ -24,7 +25,7 @@ html {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(79, 215, 233, 0.7);
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -32,58 +33,29 @@ html {
 .card {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #5783d6;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    background-image: url('https://img.freepik.com/foto-gratis/primer-plano-ventana-dia-lluvioso-gotas-lluvia-rodando-ventana_181624-21644.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1714435200&semt=sph');
+    background-size: cover;
 }
 
-.card-header {
+.card-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .card-body {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.province {
-    flex: 0 0 calc(50% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f7fafc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.province:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.province-name {
-    font-size: 20px;
-    font-weight: bold;
+.card-text {
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #000000;
-}
-
-.weather-info {
-    color: #000000;
-}
-
-hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 1px solid #ddd;
-}
-
-h1 {
     color: #000000;
 }
 
@@ -95,4 +67,13 @@ h1 {
 .title-image img {
     max-width: 100%;
     height: auto;
+}
+.card-columns {
+    column-count: 1;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
 }
